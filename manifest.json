@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Pass Logger",
+    "version": "1.0.0",
+
+    "description": "test description",
+
+    "icons": {
+        "48": "icons/logger-48.png"
+    },
+
+    
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["content_scripts/logger.js"]
+        }
+    ]
+}
